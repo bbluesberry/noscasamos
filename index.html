@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Laura y Gustavo se casan — 23 de septiembre 2026">
+  <meta property="og:title" content="Laura & Gustavo - ¡Nos casamos!">
+  <meta property="og:description" content="23 de septiembre 2026">
+  <meta property="og:image" content="https://assets.toscastech.com.ar/invitacion-og-1.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://noscasamos.toscastech.com.ar">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://assets.toscastech.com.ar/invitacion-og-1.png">
+  
+  <title>Laura & Gustavo — ¡Nos casamos!</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='75' font-size='75'%3E🎂%3C/text%3E%3C/svg%3E">
+
+  <style>
+    :root {
+      --lavender-purple: #9667E0;
+      --mauve: #D4BBFC;
+      --lavender-veil: #EBD9FC;
+      --ghost-white: #FBFAFF;
+      --arena-clara: #E9E2D8;
+      --cuando-bg: #F2EBFB;
+      --text-dark: #2d2d2d;
+      --text-light: #4a4a4a;
+      --text-white: #FBFAFF;
+      --tinta: #221F2E;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      font-family: 'Nunito', sans-serif;
+      color: var(--text-dark);
+      line-height: 1.8;
+      background: var(--ghost-white);
+      min-height: 100vh;
+      font-size: 16px;
+    }
+
+    /* ========== HERO / HEADER ========== */
+    .hero {
+      text-align: center;
+      background: var(--ghost-white);
+      padding: 60px 24px 50px;
+    }
+
+    .hero-photo {
+      width: 40%;
+      height: auto;
+      border-radius: 50%;
+      margin: 0 auto 35px;
+      background: var(--ghost-white);
+      border: 5px solid var(--lavender-purple);
+      object-fit: cover;
+      box-shadow: 0 8px 24px rgba(150, 103, 224, 0.15);
+    }
+
+    @media (max-width: 768px) {
+      .hero-photo {
+        width: 70%;
+      }
+    }
+
+    .hero h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: var(--lavender-purple);
+      margin-bottom: 8px;
+      letter-spacing: -0.01em;
+      line-height: 1.1;
+    }
+
+    .hero .tagline {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--lavender-purple);
+      margin-bottom: 16px;
+      letter-spacing: -0.01em;
+      position: relative;
+    }
+
+    .filigrana {
+      width: 55%;
+      max-width: 400px;
+      height: auto;
+      margin: 12px auto 24px;
+      opacity: 0.9;
+    }
+
+    .hero p {
+      color: var(--text-light);
+      font-size: 1.05rem;
+      max-width: 520px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+
+    /* ========== COUNTDOWN SECTION ========== */
+    .countdown-section {
+      background: var(--lavender-veil);
+      padding: 50px 24px;
+      text-align: center;
+    }
+
+    .countdown {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 16px;
+      margin: 0;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .countdown-item {
+      text-align: center;
+    }
+
+    .countdown-number {
+      font-family: 'Nunito', sans-serif;
+      font-size: 2.8rem;
+      font-weight: 500;
+      color: var(--lavender-purple);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .countdown-unit {
+      font-size: 0.85rem;
+      color: var(--text-light);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    @media (max-width: 520px) {
+      .countdown {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 8px;
+      }
+      .countdown-number {
+        font-size: 1.8rem;
+      }
+      .countdown-unit {
+        font-size: 0.7rem;
+      }
+    }
+
+    /* ========== INFO SECTION (Cuándo / Dónde) ========== */
+    .info-section {
+      background: var(--ghost-white);
+      padding: 50px 24px;
+      text-align: center;
+    }
+
+    .cuando-section {
+      background: var(--cuando-bg);
+      padding: 50px 24px;
+      text-align: center;
+    }
+
+    .info-row {
+      max-width: 600px;
+      margin: 0 auto 40px;
+    }
+
+    .info-row:last-child {
+      margin-bottom: 0;
+    }
+
+    .info-icon-top {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 16px;
+    }
+
+    .info-icon-top img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .info-title {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: var(--lavender-purple);
+      letter-spacing: -0.01em;
+      margin-bottom: 20px;
+    }
+
+    .info-content {
+      margin-top: 18px;
+      text-align: center;
+    }
+
+    .info-content p {
+      color: var(--text-light);
+      font-size: 1.05rem;
+      margin-bottom: 8px;
+      line-height: 1.8;
+    }
+
+    .info-content p.small {
+      font-size: 0.95rem;
+      color: var(--text-light);
+    }
+
+    .info-link {
+      font-size: 0.95rem;
+      color: var(--lavender-purple);
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 1px solid var(--lavender-purple);
+      transition: opacity 0.2s;
+      display: inline-block;
+      margin-top: 12px;
+    }
+
+    .info-link:hover {
+      opacity: 0.7;
+    }
+
+    .donde-box {
+      border: 1px solid var(--lavender-purple);
+      border-radius: 12px;
+      padding: 25px;
+      margin-top: 20px;
+      background: var(--ghost-white);
+      text-align: center;
+    }
+
+    .lugar-item {
+      margin-bottom: 20px;
+    }
+
+    .lugar-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .lugar-hora {
+      font-weight: 700;
+      color: var(--lavender-purple);
+      font-size: 1.25rem;
+      margin-bottom: 6px;
+    }
+
+    .lugar-nombre {
+      color: var(--text-light);
+      font-size: 1.1rem;
+      margin-bottom: 4px;
+    }
+
+    .lugar-direccion {
+      color: var(--text-light);
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+    }
+
+    .info-divider {
+      height: 1px;
+      background: var(--mauve);
+      margin: 40px 0;
+    }
+
+    /* ========== CONFIRMACIÓN SECTION ========== */
+    .confirmation-section {
+      background: var(--lavender-veil);
+      padding: 50px 24px;
+    }
+
+    .form-container {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .form-icon-top {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 16px;
+    }
+
+    .form-icon-top img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .form-title {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: var(--lavender-purple);
+      letter-spacing: -0.01em;
+      margin-bottom: 25px;
+    }
+
+    /* ========== FORM INPUTS ========== */
+    .form-group {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: 600;
+      color: var(--lavender-purple);
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+    }
+
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1.5px solid var(--mauve);
+      border-radius: 10px;
+      font-family: 'Nunito', sans-serif;
+      font-size: 1rem;
+      color: var(--text-dark);
+      background: var(--ghost-white);
+      transition: all 0.2s;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: var(--lavender-purple);
+      box-shadow: 0 0 0 3px rgba(150, 103, 224, 0.1);
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    @media (max-width: 520px) {
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .confirm-buttons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 10px;
+    }
+
+    .confirm-button {
+      padding: 11px;
+      border: 1.5px solid var(--mauve);
+      border-radius: 8px;
+      background: var(--ghost-white);
+      color: var(--text-dark);
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-family: 'Nunito', sans-serif;
+      font-size: 0.95rem;
+    }
+
+    .confirm-button:hover {
+      border-color: var(--lavender-purple);
+      background: rgba(150, 103, 224, 0.05);
+    }
+
+    .confirm-button.active {
+      background: var(--lavender-purple);
+      color: white;
+      border-color: var(--lavender-purple);
+    }
+
+    .btn-submit {
+      width: 100%;
+      padding: 13px;
+      background: linear-gradient(135deg, var(--lavender-purple) 0%, var(--mauve) 100%);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      margin-top: 12px;
+    }
+
+    .btn-submit:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(150, 103, 224, 0.25);
+    }
+
+    .btn-submit:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .form-message {
+      margin-top: 12px;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      text-align: center;
+      display: none;
+      border-left: 4px solid transparent;
+    }
+
+    .form-message.success {
+      background: rgba(150, 103, 224, 0.15);
+      color: var(--text-dark);
+      border-left-color: var(--lavender-purple);
+      display: block;
+    }
+
+    .form-message.error {
+      background: rgba(255, 100, 100, 0.15);
+      color: #c62828;
+      border-left-color: #c62828;
+      display: block;
+    }
+
+    /* ========== LUNA DE MIEL SECTION ========== */
+    .luna-section {
+      background: var(--ghost-white);
+      padding: 50px 24px;
+      text-align: center;
+    }
+
+    .luna-container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .luna-icon-top {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 16px;
+    }
+
+    .luna-icon-top img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .luna-title {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: var(--lavender-purple);
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+    }
+
+    .luna-subtitle {
+      font-size: 0.95rem;
+      color: var(--text-light);
+      margin-bottom: 20px;
+    }
+
+    .luna-button {
+      width: 100%;
+      padding: 13px;
+      background: linear-gradient(135deg, var(--lavender-purple) 0%, var(--mauve) 100%);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-family: 'Nunito', sans-serif;
+      font-size: 0.95rem;
+    }
+
+    .luna-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(150, 103, 224, 0.25);
+    }
+
+    .luna-data {
+      display: none;
+      background: var(--lavender-veil);
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 18px;
+      border: 1px solid var(--mauve);
+      text-align: center;
+    }
+
+    .luna-data.visible {
+      display: block;
+      animation: slideIn 0.3s ease;
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .luna-data h5 {
+      font-family: 'Nunito', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--text-light);
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .luna-data p {
+      font-family: 'Nunito', monospace;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--lavender-purple);
+      margin-bottom: 16px;
+      word-break: break-all;
+    }
+
+    .luna-data p:last-of-type {
+      margin-bottom: 0;
+    }
+
+    /* ========== FOOTER ========== */
+    .footer {
+      background: var(--mauve);
+      color: white;
+      text-align: center;
+      padding: 60px 24px 40px;
+    }
+
+    .footer-filigrana {
+      width: 55%;
+      max-width: 400px;
+      height: auto;
+      margin: 0 auto 20px;
+      filter: brightness(0) invert(1);
+    }
+
+    .footer h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    .footer p {
+      font-size: 0.95rem;
+      color: white;
+      margin-bottom: 6px;
+      opacity: 0.95;
+    }
+
+    .footer p.date {
+      font-size: 0.85rem;
+      color: white;
+      font-weight: 600;
+      opacity: 0.85;
+    }
+
+    /* ========== UTILITIES ========== */
+    .loading {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background: white;
+      border-radius: 50%;
+      animation: pulse 1.5s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO / HEADER -->
+  <section class="hero">
+    <img src="https://assets.toscastech.com.ar/foto-invitacion.png" alt="Laura y Gustavo" class="hero-photo">
+    <h1>Laura & Gustavo</h1>
+    <div class="tagline">¡NOS CASAMOS!</div>
+    <img src="https://assets.toscastech.com.ar/filigrana-cora.png" alt="" class="filigrana">
+    <p>Te invitamos a celebrar esta fecha especial con nosotros — un día lleno de amor, alegría y muchas risas.</p>
+  </section>
+
+  <!-- COUNTDOWN -->
+  <section class="countdown-section">
+    <div class="countdown">
+      <div class="countdown-item">
+        <div class="countdown-number" id="days">00</div>
+        <div class="countdown-unit">Días</div>
+      </div>
+      <div class="countdown-item">
+        <div class="countdown-number" id="hours">00</div>
+        <div class="countdown-unit">Horas</div>
+      </div>
+      <div class="countdown-item">
+        <div class="countdown-number" id="minutes">00</div>
+        <div class="countdown-unit">Minutos</div>
+      </div>
+      <div class="countdown-item">
+        <div class="countdown-number" id="seconds">00</div>
+        <div class="countdown-unit">Segundos</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CUANDO SECTION -->
+  <section class="cuando-section">
+    <div class="info-row">
+      <div class="info-icon-top">
+        <img src="https://assets.toscastech.com.ar/fecha.webp" alt="Fecha">
+      </div>
+      <h2 class="info-title">¿Cuándo?</h2>
+      <div class="info-content">
+        <p><strong>23 de septiembre 2026</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DONDE SECTION -->
+  <section class="info-section">
+    <div class="info-row">
+      <h2 class="info-title">¿Dónde?</h2>
+      
+      <div class="donde-box">
+        <div class="lugar-item">
+          <div class="info-icon-top" style="margin-bottom: 12px;">
+            <img src="https://assets.toscastech.com.ar/civil.webp" alt="Registro Civil">
+          </div>
+          <div class="lugar-hora">11:50 hs</div>
+          <div class="lugar-nombre">Registro Civil de City Bell</div>
+          <a href="https://maps.app.goo.gl/MXzrVzcPu3JNKzjc6" target="_blank" class="info-link">Cómo llegar</a>
+        </div>
+
+        <div style="margin: 25px 0; border-top: 1px solid var(--mauve);"></div>
+
+        <div class="lugar-item">
+          <div class="info-icon-top" style="margin-bottom: 12px;">
+            <img src="https://assets.toscastech.com.ar/almuerzo.webp" alt="Almuerzo">
+          </div>
+          <div class="lugar-hora">12:30 hs</div>
+          <div class="lugar-nombre">Moro Finca y Fonda</div>
+          <div class="lugar-direccion">Club Hípico y de Golf City Bell</div>
+          <a href="https://maps.app.goo.gl/MXzrVzcPu3JNKzjc6" target="_blank" class="info-link">Cómo llegar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONFIRMACIÓN -->
+  <section class="confirmation-section">
+    <div class="form-container">
+      <div class="form-icon-top">
+        <img src="https://assets.toscastech.com.ar/confirmar.webp" alt="Confirmar">
+      </div>
+      <h2 class="form-title">Confirmá tu asistencia</h2>
+
+      <form id="rsvpForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+          </div>
+          <div class="form-group">
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>¿Confirmas tu asistencia?</label>
+          <div class="confirm-buttons">
+            <button type="button" class="confirm-button" data-confirm="sí">Sí, ¡voy!</button>
+            <button type="button" class="confirm-button" data-confirm="no">No puedo ir</button>
+          </div>
+          <input type="hidden" id="confirma" name="confirma" required>
+        </div>
+
+        <div class="form-group">
+          <label for="personas">¿Cuántas personas?</label>
+          <select id="personas" name="personas" required>
+            <option value="">Selecciona una opción</option>
+            <option value="1">1 persona</option>
+            <option value="2">2 personas</option>
+            <option value="3">3 personas</option>
+            <option value="4">4 personas</option>
+            <option value="5">5 personas</option>
+            <option value="6">6 personas</option>
+            <option value="7">7 personas</option>
+            <option value="8">8 personas</option>
+            <option value="9">9 personas</option>
+            <option value="10">10 personas</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn-submit">Confirmar asistencia</button>
+        <div class="form-message" id="formMessage"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- LUNA DE MIEL -->
+  <section class="luna-section">
+    <div class="luna-container">
+      <div class="luna-icon-top">
+        <img src="https://assets.toscastech.com.ar/luna-miel.webp" alt="Luna de Miel">
+      </div>
+      <h2 class="luna-title">Luna de miel</h2>
+      <p class="luna-subtitle">Si desean acompañarnos en esta aventura, aquí van nuestros datos:</p>
+      
+      <button type="button" class="luna-button" id="lunaButton">Ver datos bancarios</button>
+      
+      <div class="luna-data" id="lunaData">
+        <h5>Alias</h5>
+        <p id="aliasValue">---</p>
+        
+        <h5>CBU</h5>
+        <p id="cbuValue">---</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <img src="https://assets.toscastech.com.ar/filigrana-cora.png" alt="" class="footer-filigrana">
+    <h2>Laura & Gustavo</h2>
+    <p>¡No te pierdas nuestra celebración!</p>
+    <p class="date">23 de septiembre de 2026</p>
+  </footer>
+
+<script>
+  // ========== CONFIGURACIÓN ==========
+  const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxbUVu8ic4_johBd94_6ExD072NfImW1d5_ySiz_m43A2LR5pRSWA4pZhcmlBA9NvSW/exec";
+  const EVENT_DATE = new Date("2026-09-23T11:50:00-03:00");
+  
+  const LUNA_MIEL = {
+    alias: "LAURA.GUSTAVO.2026",
+    cbu: "0123456789012345678901"
+  };
+
+  // ========== COUNTDOWN ==========
+  function updateCountdown() {
+    const now = new Date();
+    const diff = EVENT_DATE - now;
+
+    if (diff <= 0) {
+      document.getElementById("days").textContent = "00";
+      document.getElementById("hours").textContent = "00";
+      document.getElementById("minutes").textContent = "00";
+      document.getElementById("seconds").textContent = "00";
+      return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((diff / 1000 / 60) % 60);
+    const seconds = Math.floor((diff / 1000) % 60);
+
+    document.getElementById("days").textContent = String(days).padStart(2, "0");
+    document.getElementById("hours").textContent = String(hours).padStart(2, "0");
+    document.getElementById("minutes").textContent = String(minutes).padStart(2, "0");
+    document.getElementById("seconds").textContent = String(seconds).padStart(2, "0");
+  }
+
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+
+  // ========== CONFIRMACIÓN ASISTENCIA ==========
+  document.querySelectorAll(".confirm-button").forEach(button => {
+    button.addEventListener("click", (e) => {
+      e.preventDefault();
+      document.querySelectorAll(".confirm-button").forEach(b => b.classList.remove("active"));
+      button.classList.add("active");
+      document.getElementById("confirma").value = button.dataset.confirm;
+    });
+  });
+
+  // ========== ENVÍO DE FORMULARIO ==========
+  document.getElementById("rsvpForm").addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const nombre = document.getElementById("nombre").value.trim();
+    const apellido = document.getElementById("apellido").value.trim();
+    const confirma = document.getElementById("confirma").value;
+    const personas = document.getElementById("personas").value;
+    const messageEl = document.getElementById("formMessage");
+
+    if (!nombre || !apellido || !confirma || !personas) {
+      messageEl.textContent = "Por favor completa todos los campos.";
+      messageEl.classList.remove("success");
+      messageEl.classList.add("error");
+      return;
+    }
+
+    const submitBtn = document.querySelector(".btn-submit");
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<span class="loading"></span> Enviando...';
+
+    try {
+      const response = await fetch(APPS_SCRIPT_URL, {
+        method: "POST",
+        body: new URLSearchParams({
+          nombre: nombre,
+          apellido: apellido,
+          confirma: confirma,
+          personas: personas
+        })
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        messageEl.textContent = data.message;
+        messageEl.classList.remove("error");
+        messageEl.classList.add("success");
+        document.getElementById("rsvpForm").reset();
+        document.querySelectorAll(".confirm-button").forEach(b => b.classList.remove("active"));
+        document.getElementById("confirma").value = "";
+      } else {
+        messageEl.textContent = data.error || "Hubo un error. Intenta de nuevo.";
+        messageEl.classList.remove("success");
+        messageEl.classList.add("error");
+      }
+    } catch (error) {
+      messageEl.textContent = "Error de conexión. Intenta de nuevo más tarde.";
+      messageEl.classList.remove("success");
+      messageEl.classList.add("error");
+      console.error("Error:", error);
+    }
+
+    submitBtn.disabled = false;
+    submitBtn.innerHTML = "Confirmar asistencia";
+  });
+
+  // ========== LUNA DE MIEL ==========
+  document.getElementById("lunaButton").addEventListener("click", () => {
+    const dataEl = document.getElementById("lunaData");
+    dataEl.classList.toggle("visible");
+
+    if (dataEl.classList.contains("visible")) {
+      document.getElementById("aliasValue").textContent = LUNA_MIEL.alias;
+      document.getElementById("cbuValue").textContent = LUNA_MIEL.cbu;
+    }
+  });
+</script>
+
+</body>
+</html>
