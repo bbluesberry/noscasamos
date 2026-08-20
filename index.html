@@ -597,6 +597,24 @@
       0%, 100% { opacity: 0.3; }
       50% { opacity: 1; }
     }
+
+    .google-calendar-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--lavender-purple) 0%, var(--mauve) 100%);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+  margin-top: 15px;
+}
+
+.google-calendar-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
   </style>
 </head>
 <body>
@@ -640,8 +658,12 @@
       </div>
       <h2 class="info-title">¿Cuándo?</h2>
       <div class="info-content">
-        <p><strong>23 de septiembre 2026</strong></p>
-      </div>
+  <p><strong>23 de septiembre 2026</strong></p>
+  <a href="https://calendar.app.google/iDSAFAYr8Lfr14SH8" target="_blank" class="google-calendar-btn">
+    + Agregar a mi calendario
+  </a>
+</div>
+
     </div>
   </section>
 
